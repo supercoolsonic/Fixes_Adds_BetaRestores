@@ -1,7 +1,7 @@
-/**
- * SADX Mod Loader.
- * SADX structs.
- */
+	/**
+	* SADX Mod Loader.
+	* SADX structs.
+	*/
 
 #ifndef SADXMODLOADER_SADXSTRUCTS_H
 #define SADXMODLOADER_SADXSTRUCTS_H
@@ -11,10 +11,10 @@
 #include "d3d8types.h"
 #include "SADXEnums.h"
 
-// All structs should be packed.
+	// All structs should be packed.
 #pragma pack(push, 1)
 
-typedef struct Rotation {
+	typedef struct Rotation {
 	int x, y, z;
 } Rotation3;
 
@@ -1578,22 +1578,6 @@ struct CharBossData
 	ObjectMaster *BossCharacter;
 	int anonymous_3;
 	void(__cdecl *DeleteFunc)();
-};
-
-struct BlackMarketItemAttributes
-{
-	int PurchasePrice;
-	int SalePrice;
-	__int16 RequiredEmblems;
-	__int16 Name;
-	__int16 Description;
-	__int16 anonymous_7;
-};
-
-struct BlackMarketItemAttributesList
-{
-	BlackMarketItemAttributes *Items;
-	int Count;
 };
 
 #pragma pack(pop)
